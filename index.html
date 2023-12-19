@@ -60,9 +60,9 @@
             
             <section class="catalog">
                 <div class="container">
-                    <div class="catalog__order order">
+                    <div class="catalog__order order order_open">
                         <section class="order__wrapper">
-                           <div class="order__wrap-title">
+                           <div class="order__wrap-title" tabindex="0" role="button">
                             <h2 class="order__title">Корзина</h2>
 
                             <span class="order__count">4</span>
@@ -76,16 +76,24 @@
                               <div class="order__total">
                                 <p>Итого</p>
                                 <p>
-                                    <span>1279</span>
-                                    <span>₽</span>
+                                    <span class="order__total-amount">1279</span>
+                                    <span class="currency">₽</span>
                                 </p>
                               </div>
+
+                              <button class="order__submit">Оформить заказ</button>
+
+                              <p class="order__apeal">Бесплатная доставка</p>
                             </div>
                         </section>
                     </div>
 
                     <div class="catalog__wrapper">
                         <h2 class="catalog__title">Бургеры</h2>
+
+                        <div class="catalog__wrap_list">
+                            <ul class="catalog__list"></ul>
+                        </div>
                     </div>
                 </div>
 
